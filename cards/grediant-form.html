@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{          
+    height: 100vh;
+    margin: 0;
+    background: 
+    linear-gradient(to right, rgba(238, 9, 121, 0.7), rgba(255, 106, 0, 0.7)), 
+    url('img/Image\ Jun\ 24\,\ 2025\,\ 10_32_45\ PM.png') no-repeat center ;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .main-container{
+        padding: 1rem;
+    }
+    .form{
+        background-color: #fff;
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 3rem;
+
+    }
+    form{
+        /* border: 2px solid red; */
+        width: 100%;
+        margin:0 auto;
+    }
+
+    form input,textarea{
+        outline: none;
+        padding-bottom: 0.5rem;
+        width: 100%;
+        border: none;
+        border-bottom: 3px solid rgba(238, 9, 121, 0.7) ;
+        margin-bottom: 3rem;
+    }
+
+    #msg{
+        padding-bottom:5rem ;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+      
+    }
+
+    .btn button{
+        padding: 0.8rem;
+        background: linear-gradient(to right, rgba(238, 9, 121, 0.7), rgba(255, 106, 0, 0.7));
+        color: white;
+        border:none  ;
+        border-radius: 0.5rem;
+        width: 12rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="form">
+            <h1>Contact Us</h1>
+            <form action="">
+                <input type="text" name="" id="" placeholder="NAME">
+                <input type="email" name="" id="" placeholder="EMAIL">
+                <input type="text" name="" id="msg" placeholder="MESSAGE">
+                <div class="btn">
+                    <button>Send your message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

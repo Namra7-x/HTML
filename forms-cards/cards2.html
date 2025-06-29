@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        min-height: 100vh;
+        background: url(img/Image\ Jun\ 24\,\ 2025\,\ 10_32_38\ PM.png);
+        background-size: cover;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container{
+        padding: 1rem;
+    }
+
+    .card-row{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+        flex-wrap: wrap;
+    }
+
+
+    .cards{
+        background-color:white ;
+        border-radius: 8px;
+        max-width: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 6px 4px 20px rgba(0,0,0,1);
+    }
+
+    .cards img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+    p{
+        font-size: 1rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .stats{
+        display: flex;justify-content: center;
+        gap: 10px;
+        text-align: center;
+        margin-top: 3rem;
+        width: 100%;
+
+    }
+
+    .read,.views,.comments{
+        flex: 1;
+    }
+
+    .content{
+        padding: 1rem;
+    }
+
+    /* .card-3 img{
+        height: 266.66px;
+        width: 400px;
+    } */
+
+
+
+
+
+</style>
+<body>
+    <div class="card-container">
+        <div class="card-row">
+            <div class="cards card-1">
+            <img src="img/Image Jun 24, 2025, 10_32_45 PM.png" alt="">
+           <div class="content">
+             <span style="color: rgb(214, 17, 119);">4 days ago</span>
+            <h2>Post one</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptate ullam consequatur et, illo quasi perferendis autem delectus sunt voluptatem.</p>
+           </div>
+            <div class="stats one" style="background-color:rgb(214, 17, 119); padding: 1rem; color: white;">
+                <div class="read" >
+                    4th <br>
+                    READ
+                </div>
+                <div class="views">
+                    5123 <br>
+                    VIEWS
+                </div>
+                   <div class="comments">
+                    32 <br>
+                    COMMENTS
+                </div>
+            </div>
+        </div>
+        <div class="cards card-2">
+            <img src="img/Image Jun 24, 2025, 10_32_44 PM.png"">
+                <div class="content">
+                     <span style="color: orange;">1 week ago</span>
+                     <h2>Post two</h2>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptate ullam consequatur et, illo quasi perferendis autem delectus sunt voluptatem.</p>
+                </div>
+             <div class="stats two" style="background-color:orange; padding: 1rem; color: white;">
+                <div class="read">
+                    7th <br>
+                    READ
+                </div>
+                <div class="views">
+                    7152 <br>
+                    VIEWS
+                </div>
+                   <div class="comments">
+                    21 <br>
+                    COMMENTS
+                </div>
+            </div>
+        </div>
+        <div class="cards card-3">
+            <img src="img/Image Jun 24, 2025, 10_32_42 PM.png" alt="" ">
+            <div class="content">
+                 <span style="color: green;">3 week ago</span>
+            <h2>Post three</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptate ullam consequatur et, illo quasi perferendis autem delectus sunt voluptatem.</p>
+            </div>
+             <div class="stats three " style="background-color:green; padding: 1rem; color: white;">
+                <div class="read">
+                    5th <br>
+                    READ
+                </div>
+                <div class="views">
+                    3021 <br>
+                    VIEWS
+                </div>
+                   <div class="comments">
+                    15 <br>
+                    COMMENTS
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

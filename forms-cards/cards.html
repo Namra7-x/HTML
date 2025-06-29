@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        min-height: 100vh;
+        background-color: #151320;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .card-row{
+        display: flex;
+        justify-content: center;
+        gap:2rem;
+        flex-wrap: wrap;
+    }
+
+
+    .cards{
+        background-color:rgba(70, 67, 67,0.98) ;
+        border-radius: 7px;
+        max-width: 250px;
+        padding:1rem ;
+    }
+
+    .cards img{
+        width: 100%;
+        clip-path: polygon(0 0,100% 0,100% 85%,0% 100%);
+    }
+
+
+
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+</style>
+<body>
+    <div class="card-container">
+        <div class="card-row">
+            <div class="cards card-1">
+            <img src="img/WhatsApp Image 2025-06-24 at 9.31.55 PM.jpeg" alt="">
+            <h2>Las Vegas</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptate ullam consequatur et, illo quasi perferendis autem delectus sunt voluptatem.</p>
+        </div>
+        <div class="cards card-2">
+            <img src="img/WhatsApp Image 2025-06-24 at 9.31.56 PM.jpeg" alt="">
+            <h2>New York</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptate ullam consequatur et, illo quasi perferendis autem delectus sunt voluptatem.</p>
+        </div>
+        <div class="cards card-3">
+            <img src="img/WhatsApp Image 2025-06-24 at 9.31.56 PM (1).jpeg" alt="">
+            <h2>Singapore</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptate ullam consequatur et, illo quasi perferendis autem delectus sunt voluptatem.</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

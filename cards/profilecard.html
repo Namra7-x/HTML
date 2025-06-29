@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:rgb(134, 214, 245);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family:sans-serif;
+        }
+
+        .main-container{
+            padding: 1rem;
+            /* border: 3px solid yellow; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .box
+        {
+            overflow: hidden;
+            background-color:rgb(154, 207, 228);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+            /* border: 2px solid red; */
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2rem;
+            gap: 2rem;
+            position: relative;
+        }
+
+        .blue{
+            height: 220px;
+            width: 220px;
+            background-color:blue;
+            border-radius: 50%;
+            position: absolute;
+            top: -120px;
+            right: -120px;
+            z-index: 1;
+        }
+        
+        .white{
+             height: 100px;
+             width: 100px;
+             background-color: #fff;
+             border-radius: 50%;
+             position: absolute;
+             top:45px;
+             right:-70px;
+        }
+
+        .img{
+            flex: 0 0 120px;
+            /* border: 2px solid red; */
+            min-width: 120px;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+           
+        }
+        .img img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 7px solid white;
+           
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+            flex: 1 1 300px;
+            min-width: 250px;
+            max-width: 100%;
+        }
+
+        .para p{
+            font-size: 1.3rem;
+            /* max-width: 400px; */
+        }
+
+        .stats {
+            display: flex;
+            gap: 1.5rem;
+            font-size:1.2rem ;
+            font-weight: 700;
+            flex-wrap: wrap;
+        }
+        .btns #follow{
+            color: white;
+            background-color: black;
+            width: 6rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+        }
+         .btns #profile{
+            color: black;
+            background-color:transparent;
+            width: 6rem;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box">
+            <div class="blue">
+
+            </div>
+            <div class="white"></div>
+            <div class="img">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp" alt="">
+            </div>
+            <div class="info">
+                <div class="name">
+                    <h1>Bradely Steve</h1>
+                    <p>@bradely steve</p>
+                </div>
+
+                <div class="para">
+                    <p>I'm a front end devloper, follow me to be the first who see my network.</p>
+                </div>
+
+                <div class="stats">
+                    <p>
+                        15K <br>Views
+                    </p>
+                    <p>
+                        82K <br>Projects
+                    </p>
+                    <p>
+                        1.3M <br>Followers
+                    </p>
+                </div>
+
+                <div class="btns">
+                    <button id="follow">Follow</button>
+                    <button id="profile">View profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

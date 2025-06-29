@@ -1,0 +1,220 @@
+
+
+@media (max-width:1253px) {
+
+    html{
+        font-size:93.75% ;
+    } 
+   /* ==================information section 2==================== */
+    .information-container{
+        flex-wrap: wrap;
+    }
+
+    .information-container .text{
+        flex: 100%;
+        display: flex;
+        /* border:2px solid red ; */
+        text-align: center;        
+    }
+
+    .information-container .text .part2{
+        margin-top: 3rem;
+    }
+
+    .information-container .text .part2 h4{
+        margin-top: 2rem;
+    }
+      .information-container .text .part2 .btn{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+    
+
+    .information-container .imgs{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+    }
+    /* ======================= features================================ */
+    .features .content{
+        padding: 0rem;
+    }
+
+    /* ================footer=================== */
+    footer .container{   
+        flex-direction: column;
+    }
+    footer .newsletter .wrapper{
+    width: 40%;
+}
+    
+}
+
+
+@media (max-width:1152px) {
+    
+/*==========reviews===========  */
+.testimonials-reviews .container .reviews{
+    flex: 100%;
+}
+
+.testimonials-reviews .container .img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+}
+
+@media (max-width:1036px) {
+
+    .product-cards-container h1{
+        text-align: center;
+    }
+    .product-cards{
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .best-items-container h1{
+        text-align: center;
+    }
+}
+
+@media (max-width:960px) {
+    html{
+        font-size: 87.5%;
+    }
+    /* =================features========================= */
+    .features-container .features{
+       flex-direction: column;
+    }
+    
+    .features .content{
+       width: 100%;
+       padding: 2rem;
+    }
+/*     
+    .features .img{
+        height: 90%;
+        border: 2px solid red;
+    } */
+    .features .img img{
+        height: 50rem;
+        width: 100%;
+        display: none;
+    }
+    /* ===============footer================== */
+
+}
+
+@media (max-width:760px) {
+    html{
+        font-size:81.25% ;
+    }
+    /* ===========news================== */
+    .news-container .container{
+        padding: 2rem;
+        gap:1rem ;
+    }
+    .news-container .img{
+       flex:1 ;
+        /* border: 2px solid red; */
+        justify-content: center;
+    }
+
+    .news-container  .text{
+        justify-content: center;
+        flex: 2;
+        /* border: 2px solid orange; */
+    }
+     .news-container .wrapper{
+        /* border: 3px solid skyblue; */
+        width: 100%;
+     }
+}
+
+
+@media (max-width:655px) {
+    /* ===========news================== */
+    .news-container .container{
+        
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .news-container .img{
+        flex: 1;
+        /* border: 2px solid red; */
+        justify-content: flex-end;
+    }
+
+    .news-container  .text{
+        justify-content: flex-start;
+        flex: 2;
+        /* border: 2px solid orange; */
+    }
+     .news-container .wrapper{
+        /* border: 3px solid skyblue; */
+        width: 100%;
+     }
+}
+
+@media (max-width:590px) {
+
+    html{
+        font-size: 75%;
+    }
+
+    /* ============nav============= */
+    .nav-items{
+        display: none;
+    }
+    /* ==========news============== */
+     .news-container .container{
+        flex-direction: column-reverse;
+    }
+    .news-container .img{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .news-container .img img{
+        width: 100%;
+    }
+
+    .news-container  .text{
+        width: 100%;
+        padding: 1rem;
+
+    }
+    /*========================= reviews====================== */
+    .testimonials-reviews img{
+        display: none;
+    } 
+
+    /* ===================footer=========================== */
+    footer .col-links{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width:400px) {
+    html{
+        font-size: 68.75%;
+    }
+    .latest-news-container h1{
+        text-align: center;
+    }
+    .information-container .imgs img{
+        width: 300px;
+        
+    }
+}

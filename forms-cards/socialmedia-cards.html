@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: #ece4f7;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container{
+          /* border:2px solid red; */
+          max-width:1200px ;
+          margin: 0 auto;
+          padding: 1rem;
+        }
+
+        .cards{
+            display: flex;
+            gap:10px;
+            flex-wrap: wrap;
+            /* border: 2px solid red; */
+        }
+        .social-media{
+            border: 3px solid black;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+            max-width: 300px;
+        }
+
+        .social-media i{
+            font-size: 4rem;
+        }
+
+        .social-media h1{
+            font-size: 2rem;
+        }
+
+        .social-media button{
+            padding: 1rem;
+            color: white;
+            background-color: rgb(49, 48, 48);
+            width: 120px;
+            border-radius: 2rem;
+            transition: .4s ease-out;
+        }
+
+        .social-media button:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .social-media p{
+            text-align: center;
+            font-size:rem ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="twitter social-media">
+                <i class="fa-brands fa-twitter"></i>
+                <h1>TWITTER</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officia.consectetur</p>
+                <button>Learn More</button>
+            </div>
+            <div class="instagram social-media">
+                <i class="fa-brands fa-instagram"></i>
+                <h1>INSTAGRAM</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officia.consectetu</p>
+                 <button>Learn More</button>
+            </div>
+            <div class="youtube social-media">
+                <i class="fa-brands fa-youtube"></i>
+                <h1>YOUTUBE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officia.  consectetur</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: url(img/Violet\ to\ Magenta\ Gradient\ and\ Shapes.png)   ;
+            background-size:cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main-container{
+            width: 100%;
+            display: flex;
+            padding: 1rem;
+            justify-content: center;
+
+        }
+        .box{
+            width: 100%;
+            max-width: 400px;
+            background:rgba(255,255,255,0.2);
+            box-shadow: 0 60px  25px 0 rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            color: white;
+            border-radius: 2rem;
+        }
+        h2{
+            line-height: 2.5rem;
+            text-align: left;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+      
+        form input{
+             background:rgba(255,255,255,0.2);
+            box-shadow: 0 10px 15px 0 rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            outline: none;
+            border: none;
+            height: 2rem;
+            width: 100%;
+            padding:1.2rem ;
+            display: block;
+            margin-bottom: 1rem;
+            border-radius: 0.3rem;
+        }
+
+        #check{
+            width: auto;
+            display: inline;
+            height: auto;
+        }
+
+        button{
+            display: block;
+            padding: 0.8rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 7rem;
+            border-radius: 0.5rem;
+            border: none;
+            font-size: 1rem;
+            margin-bottom: 3rem;
+           
+        }
+        span{
+            display: block;
+            margin-bottom: 1rem;            
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .pass{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .sign{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box">
+            <h2>LOGIN TO <br> CODE CONVEY</h2>
+
+            <form action="">
+                <input type="text" name="" id="" placeholder="Login">
+                <input type="password" name="" id="" placeholder="Password">
+
+                <input type="checkbox" name="check" id="check"> Remember
+
+                <button>Login</button>
+
+                <div class="pass">
+                    <span>Forgot password?</span>
+                    <a href="">Click here</a>
+                </div>
+                <div class="sign">
+                    <span>Don't have an account?</span>
+                    <a href="">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

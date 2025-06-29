@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form with Left Image</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: sans-serif;
+      background: 
+        linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+        url('img/bg.jpg') 
+        no-repeat center center / cover;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 900px;
+      background: white;
+      border-radius: 10px;
+      /* overflow: hidden; */
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .left-image {
+      flex: 1;
+      background: url('img/bg.jpg') no-repeat center center/cover;
+    }
+
+    .right-form {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right-form h2 {
+        text-align: center;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .right-form input,
+    .right-form textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: none;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .right-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .right-form button {
+      padding: 0.8rem;
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .right-form button:hover {
+      background-color: #27ae60;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="left-image"></div>
+    <div class="right-form">
+      <h2>Contact Us</h2>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <input type="tel" placeholder="Phone">
+      <textarea placeholder= "Message"></textarea>
+      <button>Send Message</button>
+    </div>
+  </div>
+
+</body>
+</html>

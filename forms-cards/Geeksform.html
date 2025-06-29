@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #bde5d2;
+            color: rgb(11,118,11);
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 1rem;
+        }
+        .form-container{
+            background-color: #fff;
+            width: 500px;
+            max-width: 700px;
+            margin: 1rem auto;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(36,67,40,0.8);
+        }
+
+        form{
+            width: 90%;
+            margin: 0 auto;
+        }
+        form label{
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 800;
+        }
+
+        input,textarea{
+            width: 100%;
+            border: 1.8px solid ;
+            border-radius: 10px;
+            padding: 5px;
+            outline: none;
+            margin-bottom:1rem ;
+        }
+
+        .radio{
+            display: flex;
+            justify-content: flex-start;
+            width:fit-content;
+            margin:1rem 0;
+        }
+
+        .radio input{
+            margin:0 1rem;
+        }
+
+        #btn-sub{
+            background-color: green;
+            color: white;
+            padding: 0.6rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="get">
+            
+            <label for=""><i class="fa-solid fa-user" style="color: #0b760b; margin-right: 0.5rem;"></i>Name</label>
+            <input type="text" name="name" id="" pattern="[a-zA-Z]" title="enter characters only">
+            <label for=""><i class="fa-solid fa-envelope" style="color: #0b760b; margin-right: 0.5rem;"></i>Email</label>
+            <input type="email" name="Emailid" id="" title="enter only characters (a-z) numbers (0-9) and special chars (@)  ">
+            <label for=""><i class="fa-solid fa-phone" style="color: #0b760b; margin-right: 0.5rem;"></i>Phone No</label>
+            <input type="tel" name="mobile" id="" title="enter only numbers">
+            <label for=""><i class="fa-solid fa-face-smile" style="color: #0b760b; margin-right: 0.5rem;" ></i>Do you satisfy with our service?</label>
+            <div class="radio">
+               Yes <input type="radio" name="service" id="">
+               No <input type="radio" name="service" id="">
+            </div>
+            <label for=""><i class="fa-solid fa-comments" style="color: #0b760b; margin-right: 0.5rem;"></i>Write your suggestions</label>
+            <textarea name="message" id=""></textarea>
+            <input type="button" value="Submit" id="btn-sub">
+        </form>
+    </div>
+</body>
+</html>
