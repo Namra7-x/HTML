@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            height: 100px;
+            width: 100px;
+            display: inline-block;
+            transform-style:preserve-3d ;
+            position: relative;
+            transition: .5s;
+        }   
+
+        .front{
+            background-color: palegreen;
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        .back{
+            background-color: aqua;
+            transform: translateZ(50px);
+
+        }
+
+        div{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        a:hover {
+            transform: rotateY(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <a href="">
+        <div class="front"></div>
+        <div class="back"></div>
+    </a>
+</body>
+</html>

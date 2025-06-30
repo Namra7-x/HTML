@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            width:100%;
+            display: block;
+        }
+
+        .img{
+            border: 2px solid red;
+            position: relative;
+        }
+
+        .div-1,.div-2{
+            /* border: 2px solid red; */
+            height: 50px;
+            width: 50px;
+            opacity: 0;
+        }
+
+        .div-1{
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: 1.8s ;
+            background:rgba(45,45,45,0.25) ;
+        }
+
+         .div-2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 1.8s;
+            background:rgba(45,45,45,0.25) ;
+        }
+
+        .img:hover .div-1{
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+        }
+
+        .img:hover .div-2{
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img">
+        <img src="https://demo2.pavothemes.com/aunuca/wp-content/uploads/2025/02/h1-dinning.jpg" alt="">
+        <div class="div-1"></div>
+        <div class="div-2"></div>
+    </div>
+</body>
+</html>
